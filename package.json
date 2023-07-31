@@ -2,9 +2,6 @@
     "name": "backend",
     "version": "0.0.0",
     "main": "app.js",
-    "engines": {
-        "node": "19.x"
-    },
     "private": true,
     "scripts": {
         "start": "node app.js",
