@@ -3,12 +3,12 @@
     "version": "0.0.0",
     "main": "app.js",
     "engines": {
-        "node": "18.x"
+        "node": "19.x"
     },
     "private": true,
     "scripts": {
         "start": "node app.js",
-        "server": "nodemon ./bin/www"
+        "server": "nodemon app.js"
     },
     "dependencies": {
         "@prisma/client": "^5.0.0",
