@@ -13,7 +13,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/api/user', require('./routes/users'));
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
 app.use('/api/article', require('./routes/state'));
 
 module.exports = app;
