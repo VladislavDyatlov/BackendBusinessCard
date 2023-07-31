@@ -16,17 +16,8 @@ const state = async(req, res) => {
 }
 
 const stateID = async(req, res) => {
-    const id = req.params.id;
 
-    const state = await prisma.state.findUnique({
-        where: {
-            id,
-        },
-        include: {
-            comment: true,
-        }
-    });
-    res.status(200).json(state);
+    res.status(200).json({ message: "Hello" });
 }
 
 const stateComment = async(req, res) => {
