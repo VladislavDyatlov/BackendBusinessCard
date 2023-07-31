@@ -4,8 +4,8 @@
     "main": "app.js",
     "private": true,
     "scripts": {
-        "start": "node index.js",
-        "server": "nodemon index.js"
+        "start": "node app.js",
+        "server": "nodemon ./bin/www"
     },
     "dependencies": {
         "@prisma/client": "^5.0.0",
