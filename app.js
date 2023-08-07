@@ -13,7 +13,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use('/', express.static(path.join(__dirname, 'public')));
 
-app.use('/api/user', require('./routes/users'));
-app.use('/api/article', require('./routes/state'));
+app.use('/api/user', async(req, res) => {
+    return res.status(200).json({ message: "Ваш отзыв успешно отправлен" });
+});
 
 module.exports = app;
