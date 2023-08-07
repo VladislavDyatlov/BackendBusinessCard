@@ -1,12 +1,7 @@
 const { prisma } = require('../prisma/prisma-client.js');
 
 const project = async(req, res) => {
-    const projects = await prisma.project.findMany({
-        include: {
-            image: true,
-        }
-    });
-    res.status(200).json({ project: projects });
+    res.status(200).json({ "project: projects": "cccc" });
 }
 
 const projeсеID = async(req, res) => {
