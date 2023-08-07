@@ -13,6 +13,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use('/', express.static(path.join(__dirname, 'public')));
 
-app.use('/api/user', require('./routes/users'));
+app.use('/api/user', async(req, res) => {
+    res.status(200).json({ "project: projects": "jj" });
+});
 
 module.exports = app;
