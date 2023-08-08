@@ -5,8 +5,7 @@
     "private": true,
     "scripts": {
         "start": "node app.js",
-        "server": "nodemon ./bin/www",
-        "build": "prisma generate && <actual-build-command>"
+        "server": "nodemon ./bin/www"
     },
     "dependencies": {
         "@prisma/client": "^5.2.0-dev.26",
