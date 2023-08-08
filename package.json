@@ -17,6 +17,7 @@
         "morgan": "~1.9.1"
     },
     "devDependencies": {
+        "netlify-cli": "^15.11.0",
         "prisma": "^5.2.0-dev.26",
         "supabase": "^1.83.3"
     }
