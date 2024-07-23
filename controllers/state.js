@@ -6,7 +6,7 @@ const state = async(req, res) => {
 
     const state = await prisma.state.findMany({
         where: {
-            category: category == "all" ? { not: "" } : category
+            category: "game"
         },
         orderBy: {
             date: "desc"
@@ -18,7 +18,7 @@ const state = async(req, res) => {
 const stateID = async(req, res) => {
     const id = req.params.id;
 
-    const state = await prisma.state.findUnique({
+    const state = await prisma.state.findMany({
         where: {
             id,
         },

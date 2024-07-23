@@ -12,7 +12,7 @@ const project = async(req, res) => {
 const projeсеID = async(req, res) => {
     const id = req.params.id;
 
-    const projects = await prisma.project.findUnique({
+    const projects = await prisma.project.findMany({
         where: {
             id,
         },
